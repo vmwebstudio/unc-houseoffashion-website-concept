@@ -1,0 +1,1146 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>UNC.HOUSEOFFASHION | Modern Fashion. Timeless Elegance.</title><meta name="description" content="Discover elegant dresses, contemporary tops and stylish trousers at UNC.HOUSEOFFASHION. Explore modern women's fashion."><meta name="theme-color" content="#f8f5ef"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+:root {
+  --black: #171717;
+  --ivory: #f8f5ef;
+  --white: #ffffff;
+  --gold: #c5a46d;
+  --taupe: #a99b89;
+  --text: #55504a;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--black);
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(248,245,239,.96);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.navbar {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--gold);
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 23px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name strong {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.brand-name small {
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #8b7659;
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: color .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-cta {
+  background: var(--black);
+  color: var(--white);
+  padding: 13px 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 26px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #e9e2d7;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px max(8%, calc((100vw - 1180px)/2));
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #8b7659;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(43px, 5vw, 70px);
+  line-height: 1.13;
+  font-weight: 400;
+  max-width: 550px;
+}
+
+.hero h1 em {
+  color: #a48657;
+  font-weight: 400;
+}
+
+.hero-description {
+  max-width: 390px;
+  margin: 25px 0 35px;
+  color: var(--text);
+  line-height: 1.9;
+  font-size: 13px;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  color: var(--white);
+  padding: 17px 28px;
+  width: fit-content;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.primary-button:hover {
+  background: #9a7b4c;
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  min-height: 650px;
+  position: relative;
+}
+
+.hero-image img {
+  height: 100%;
+  min-height: 650px;
+  object-position: center 25%;
+}
+
+.hero-label {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  background: rgba(248,245,239,.94);
+  padding: 18px 25px;
+}
+
+.hero-label small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #8b7659;
+}
+
+.hero-label strong {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 25px 15px;
+  border-bottom: 1px solid #e6dfd5;
+  background: var(--ivory);
+}
+
+.trust-strip span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #71685e;
+}
+
+/* SECTION HEADINGS */
+
+.section {
+  padding: 105px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(34px, 4vw, 49px);
+  font-weight: 400;
+}
+
+.section-heading p {
+  color: var(--text);
+  font-size: 12px;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+/* COLLECTIONS */
+
+.collections {
+  background: var(--white);
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.collection-card {
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+  background: #e9e2d7;
+}
+
+.collection-card img {
+  height: 100%;
+  transition: transform .7s;
+}
+
+.collection-card:hover img {
+  transform: scale(1.06);
+}
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 45%, rgba(0,0,0,.65));
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 30px;
+  color: var(--white);
+}
+
+.collection-overlay span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.collection-overlay h3 {
+  font-family: var(--serif);
+  font-size: 33px;
+  font-weight: 400;
+}
+
+.collection-overlay a {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 14px;
+  border-bottom: 1px solid var(--gold);
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+/* FEATURED */
+
+.featured {
+  background: var(--ivory);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: var(--white);
+}
+
+.product-image {
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  background: #e9e2d7;
+}
+
+.product-image img {
+  height: 100%;
+  transition: transform .6s;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--ivory);
+  padding: 8px 12px;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.product-info p {
+  color: var(--text);
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.product-info a {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+}
+
+/* EDITORIAL */
+
+.editorial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #e9e2d7;
+}
+
+.editorial-image {
+  min-height: 550px;
+}
+
+.editorial-image img {
+  height: 100%;
+  min-height: 550px;
+}
+
+.editorial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 75px 12%;
+}
+
+.editorial-content h2 {
+  font-family: var(--serif);
+  font-size: clamp(37px, 4vw, 53px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.editorial-content p {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 2;
+  margin: 25px 0 30px;
+  max-width: 420px;
+}
+
+/* ABOUT */
+
+.about {
+  background: var(--white);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image {
+  height: 500px;
+}
+
+.about-image img {
+  height: 100%;
+}
+
+.about-content h2 {
+  font-family: var(--serif);
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-content p {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 2;
+  margin: 25px 0;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.newsletter h2 {
+  font-family: var(--serif);
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.newsletter p {
+  font-size: 12px;
+  color: #c8c0b6;
+  margin: 15px auto 25px;
+  line-height: 1.8;
+}
+
+.newsletter a {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  padding: 15px 25px;
+  color: var(--white);
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.newsletter a:hover {
+  background: var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: var(--white);
+  padding: 65px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 45px;
+}
+
+.footer-brand {
+  font-family: var(--serif);
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.footer-description {
+  max-width: 300px;
+  font-size: 11px;
+  color: #aaa;
+  line-height: 1.9;
+  margin-top: 15px;
+}
+
+.footer-column h4 {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.footer-column a,
+.footer-column p {
+  display: block;
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 13px;
+  line-height: 1.7;
+}
+
+.footer-column a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 23px;
+  text-align: center;
+  font-size: 9px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 999;
+  background: #218c58;
+  color: white;
+  padding: 15px 19px;
+  border-radius: 50px;
+  font-size: 11px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.2);
+  transition: .3s;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity .8s, transform .8s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width: 850px) {
+
+  .navbar {
+    min-height: 75px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: var(--ivory);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 6%;
+    gap: 25px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding: 75px 7%;
+  }
+
+  .hero-image,
+  .hero-image img {
+    min-height: 450px;
+    height: 450px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card {
+    height: 480px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-image {
+    height: 300px;
+  }
+
+  .editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-image,
+  .editorial-image img {
+    min-height: 420px;
+  }
+
+  .editorial-content {
+    padding: 65px 8%;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image {
+    height: 420px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .brand-name strong {
+    font-size: 16px;
+  }
+
+  .brand-name small {
+    font-size: 7px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .trust-strip {
+    gap: 17px;
+  }
+
+  .trust-strip span {
+    font-size: 8px;
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 420px;
+  }
+
+  .collection-card {
+    height: 420px;
+  }
+
+  .about-content h2 {
+    font-size: 38px;
+  }
+
+  .newsletter h2 {
+    font-size: 34px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: auto;
+  }
+
+  .whatsapp-float {
+    right: 13px;
+    bottom: 15px;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
+</style></head><body><div class="announcement">
+  DISCOVER YOUR STYLE — MODERN FASHION, TIMELESS ELEGANCE
+</div><header>
+  <div class="container navbar"><a href="#home" class="brand">
+  <div class="brand-mark">UC</div>
+
+  <div class="brand-name">
+    <strong>UNC.</strong>
+    <small>HOUSEOFFASHION</small>
+  </div>
+</a>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+  ☰
+</button>
+
+<ul class="nav-links" id="navLinks">
+  <li><a href="#home">HOME</a></li>
+  <li><a href="#collections">COLLECTIONS</a></li>
+  <li><a href="#new-arrivals">NEW ARRIVALS</a></li>
+  <li><a href="#about">OUR STORY</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+</ul>
+
+<a href="#collections" class="nav-cta">EXPLORE COLLECTION</a>
+
+  </div>
+</header><main><section class="hero" id="home">  <div class="hero-content"><span class="eyebrow">THE ART OF PERSONAL STYLE</span>
+
+<h1>
+  Elegance in<br>
+  every <em>detail.</em>
+</h1>
+
+<p class="hero-description">
+  Discover a world of contemporary women's fashion.
+  Thoughtfully styled pieces that celebrate confidence,
+  individuality and timeless elegance.
+</p>
+
+<a href="#collections" class="primary-button">
+  DISCOVER THE COLLECTION →
+</a>
+
+  </div>  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1100&q=85"
+      alt="Elegant women's fashion editorial"
+      fetchpriority="high"
+    ><div class="hero-label">
+  <small>UNC. STYLE EDIT</small>
+  <strong>Confidence looks beautiful.</strong>
+</div>
+
+  </div></section><div class="trust-strip">
+  <span>MODERN STYLE</span>
+  <span>TIMELESS ELEGANCE</span>
+  <span>EVERYDAY CONFIDENCE</span>
+  <span>EFFORTLESS BEAUTY</span>
+</div><section class="section collections" id="collections">  <div class="container"><div class="section-heading reveal">
+  <span class="eyebrow">EXPLORE OUR WORLD</span>
+  <h2>Shop the Collections</h2>
+  <p>Find the pieces that express your personal style.</p>
+</div>
+
+<div class="collection-grid">
+
+  <article class="collection-card reveal">
+    <img
+      src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=850&q=85"
+      alt="Women's elegant dresses"
+      loading="lazy"
+    >
+
+    <div class="collection-overlay">
+      <span>01 — THE DRESS EDIT</span>
+      <h3>Elegant Dresses</h3>
+      <a href="#new-arrivals">EXPLORE COLLECTION →</a>
+    </div>
+  </article>
+
+  <article class="collection-card reveal">
+    <img
+      src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=850&q=85"
+      alt="Contemporary women's fashion"
+      loading="lazy"
+    >
+
+    <div class="collection-overlay">
+      <span>02 — THE TOP EDIT</span>
+      <h3>Contemporary Tops</h3>
+      <a href="#new-arrivals">EXPLORE COLLECTION →</a>
+    </div>
+  </article>
+
+  <article class="collection-card reveal">
+    <img
+      src="https://images.unsplash.com/photo-1506629905607-d9a9c6e7c4e7?w=850&q=85"
+      alt="Women's contemporary trousers"
+      loading="lazy"
+    >
+
+    <div class="collection-overlay">
+      <span>03 — THE TROUSER EDIT</span>
+      <h3>Modern Trousers</h3>
+      <a href="#new-arrivals">EXPLORE COLLECTION →</a>
+    </div>
+  </article>
+
+</div>
+
+  </div></section><section class="section featured" id="new-arrivals">  <div class="container"><div class="section-heading reveal">
+  <span class="eyebrow">CURATED FOR YOU</span>
+  <h2>Featured Fashion</h2>
+  <p>A preview of the styles that define the UNC. aesthetic.</p>
+</div>
+
+<div class="product-grid">
+
+  <article class="product-card reveal">
+    <div class="product-image">
+      <span class="product-tag">STYLE EDIT</span>
+      <img
+        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=750&q=85"
+        alt="Women's dress style"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="product-info">
+      <h3>The Elegant Dress</h3>
+      <p>Refined style for memorable moments.</p>
+      <a href="#contact">ENQUIRE ON WHATSAPP →</a>
+    </div>
+  </article>
+
+  <article class="product-card reveal">
+    <div class="product-image">
+      <span class="product-tag">CONTEMPORARY</span>
+      <img
+        src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=750&q=85"
+        alt="Women's contemporary outfit"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="product-info">
+      <h3>The Modern Top</h3>
+      <p>Effortless pieces for everyday expression.</p>
+      <a href="#contact">ENQUIRE ON WHATSAPP →</a>
+    </div>
+  </article>
+
+  <article class="product-card reveal">
+    <div class="product-image">
+      <span class="product-tag">TIMELESS STYLE</span>
+      <img
+        src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=750&q=85"
+        alt="Women's fashion outfit"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="product-info">
+      <h3>The Trouser Edit</h3>
+      <p>Versatile fashion with a polished finish.</p>
+      <a href="#contact">ENQUIRE ON WHATSAPP →</a>
+    </div>
+  </article>
+
+</div>
+
+  </div></section><section class="editorial">  <div class="editorial-image">
+    <img
+      src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000&q=85"
+      alt="Contemporary women's fashion editorial"
+      loading="lazy"
+    >
+  </div>  <div class="editorial-content reveal"><span class="eyebrow">THE UNC. EXPERIENCE</span>
+
+<h2>
+  Fashion is more<br>
+  than what you wear.
+</h2>
+
+<p>
+  It is how you express yourself, how you carry yourself
+  and how you feel. Discover fashion that moves effortlessly
+  between everyday moments and special occasions.
+</p>
+
+<a href="#collections" class="primary-button">
+  FIND YOUR STYLE →
+</a>
+
+  </div></section><section class="section about" id="about">  <div class="container about-layout"><div class="about-image reveal">
+  <img
+    src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=900&q=85"
+    alt="Women's fashion editorial photography"
+    loading="lazy"
+  >
+</div>
+
+<div class="about-content reveal">
+
+  <span class="eyebrow">WELCOME TO UNC.</span>
+
+  <h2>
+    A style that<br>
+    speaks for itself.
+  </h2>
+
+  <p>
+    UNC.HOUSEOFFASHION is presented as a modern women's
+    fashion destination, bringing together elegant,
+    contemporary and everyday styles.
+  </p>
+
+  <p>
+    From statement dresses to versatile tops and trousers,
+    discover fashion that allows your individuality to shine.
+  </p>
+
+  <a href="#collections" class="primary-button">
+    EXPLORE OUR STYLE →
+  </a>
+
+</div>
+
+  </div></section><section class="newsletter"><span class="eyebrow">YOUR NEXT STYLE DISCOVERY</span>
+
+  <h2>Let's find your look.</h2>  <p>
+    Interested in a style or looking for something special?
+    Connect with our team directly.
+  </p><a href="#contact">GET IN TOUCH →</a>
+
+</section></main><footer id="contact">  <div class="container"><div class="footer-grid">
+
+  <div>
+    <div class="footer-brand">UNC.HOUSEOFFASHION</div>
+
+    <p class="footer-description">
+      Modern fashion. Timeless elegance.
+      Discover a style that reflects your individuality.
+    </p>
+  </div>
+
+  <div class="footer-column">
+    <h4>EXPLORE</h4>
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#new-arrivals">Featured Fashion</a>
+    <a href="#about">Our Story</a>
+  </div>
+
+  <div class="footer-column">
+    <h4>CONNECT</h4>
+    <a href="#" id="footerInstagram">Instagram</a>
+    <a href="#" id="footerFacebook">Facebook</a>
+    <a href="#" id="footerWhatsApp">WhatsApp</a>
+    <p>Store information available on enquiry.</p>
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  © <span id="year"></span> UNC.HOUSEOFFASHION.
+  INDEPENDENT WEBSITE CONCEPT BY VM WEB STUDIO.
+</div>
+
+  </div></footer><a href="#" class="whatsapp-float" id="whatsappFloat">
+  WhatsApp Us ↗
+</a><script>
+
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+
+const isOpen = navLinks.classList.toggle("active");
+
+menuToggle.setAttribute("aria-expanded", isOpen);
+menuToggle.textContent = isOpen ? "✕" : "☰";
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+link.addEventListener("click", () => {
+
+navLinks.classList.remove("active");
+menuToggle.setAttribute("aria-expanded", "false");
+menuToggle.textContent = "☰";
+
+});
+
+});
+
+/* SCROLL ANIMATIONS */
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if (entry.isIntersecting) {
+
+  entry.target.classList.add("visible");
+
+  observer.unobserve(entry.target);
+
+}
+
+});
+
+}, {
+threshold: 0.12
+});
+
+document.querySelectorAll(".reveal").forEach(element => {
+observer.observe(element);
+});
+
+/* FOOTER YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+/* DEMO CONFIGURATION */
+
+const BUSINESS_WHATSAPP = "";
+const INSTAGRAM_URL = "";
+const FACEBOOK_URL = "";
+
+const whatsappMessage = encodeURIComponent(
+"Hello UNC.HOUSEOFFASHION, I would like to make an enquiry about your fashion collection."
+);
+
+const whatsappLink = BUSINESS_WHATSAPP
+? "https://wa.me/${BUSINESS_WHATSAPP}?text=${whatsappMessage}"
+: "#contact";
+
+document.getElementById("whatsappFloat").href = whatsappLink;
+document.getElementById("footerWhatsApp").href = whatsappLink;
+
+document.getElementById("footerInstagram").href =
+INSTAGRAM_URL || "#contact";
+
+document.getElementById("footerFacebook").href =
+FACEBOOK_URL || "#contact";
+
+</script></body>
+</html>
